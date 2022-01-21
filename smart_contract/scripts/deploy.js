@@ -3,7 +3,7 @@
 const main = async () => {
 
   const Transactions = await hre.ethers.getContractFactory("Transactions");
-  const transations = await Transactions.deploy("Hello, Hardhat!");
+  const transations = await Transactions.deploy();
 
   await transations.deployed();
 
